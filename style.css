@@ -1,0 +1,299 @@
+/* SKL Color Palette */
+:root {
+    --skl-bg-blue: #E3EEFF;
+    --skl-nav-blue: #0066CC;
+    --skl-header-light: #C4D8E7;
+    --skl-border-blue: #A5C0D5;
+    --skl-dark-gray: #767677;
+}
+
+body.jbdyfmt {
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Top Ad Section */
+.top-ad-banner {
+    background-color: var(--skl-bg-blue);
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 1px solid var(--skl-border-blue);
+}
+
+.ad-placeholder {
+    width: 728px;
+    height: 90px;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    line-height: 90px;
+    color: #999;
+    font-size: 12px;
+}
+
+/* --- HEADER LAYOUT --- */
+.header-main {
+    background: url('https://webmail.juno.com/images/headers/topnav-upper-bg_j.gif') repeat-x;
+    height: 75px; /* Slightly taller for the new logo */
+    border-bottom: 1px solid #222;
+}
+
+.header-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* --- FIXED SKL HEADER (EXACT MATCH) --- */
+.header-main {
+    /* The specific blue background from the SKL code */
+    background: #002d72; 
+    background: url('https://webmail.juno.com/images/headers/topnav-upper-bg_j.gif') repeat-x;
+    height: 32px; /* SKL headers were very short, only 30-35px */
+    border-bottom: 1px solid #000;
+    width: 100%;
+}
+
+.header-content {
+    max-width: 100%; /* Original SKL was full width */
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+/* --- THE LOGO FIX --- */
+.logo-area {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.skl-logo-img {
+    height: 32px; /* Force the image to fit the bar height exactly */
+    width: auto;
+    display: block;
+    margin-right: 10px;
+}
+
+/* --- NAV & SEARCH (RIGHT SIDE) --- */
+.nav-and-search {
+    display: flex;
+    flex-direction: row; /* Original was one single line */
+    align-items: center;
+    gap: 15px;
+    padding-right: 10px;
+}
+
+.top-nav-links {
+    margin-bottom: 0; /* Remove the vertical stack */
+}
+
+.top-nav-links a {
+    color: #ffffff !important;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+.sep {
+    color: #ffffff;
+    font-size: 11px;
+    padding: 0 5px;
+}
+
+/* --- SEARCH BOX FIX --- */
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.hdr_srch_field {
+    border: 1px solid #7F9DB9;
+    height: 18px; /* Very thin search bar */
+    width: 130px;
+    padding: 0 5px;
+    font-size: 11px;
+}
+
+.btn-search {
+    background: #efefef;
+    background: linear-gradient(to bottom, #ffffff 0%, #cccccc 100%);
+    color: #000;
+    border: 1px solid #666;
+    font-size: 10px;
+    height: 20px;
+    margin-left: 2px;
+    padding: 0 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Layout Content */
+.content-wrapper {
+    max-width: 1100px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.welcome-text {
+    font-size: 18px;
+    color: var(--skl-nav-blue);
+    font-weight: bold;
+}
+
+.instruction-text {
+    color: #FF3333;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* The Login Box Style */
+.login-box-container {
+    border: 1px solid var(--skl-border-blue);
+    width: 380px;
+}
+
+.login-box-header {
+    background-color: var(--skl-header-light);
+    padding: 8px 12px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #000;
+}
+
+.login-box-body {
+    padding: 20px;
+    background: #fff;
+}
+
+.input-label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.id-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.domain-text {
+    font-weight: bold;
+    font-size: 13px;
+    color: #666;
+}
+
+.form-links {
+    font-size: 11px;
+    margin: 10px 0;
+}
+
+.form-links a {
+    color: var(--skl-nav-blue);
+    text-decoration: none;
+}
+
+.stay-signed-in {
+    font-size: 11px;
+    margin-bottom: 15px;
+}
+
+.button-row {
+    text-align: right;
+}
+
+.button-skl {
+    background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+    border: 1px solid #707070;
+    padding: 4px 20px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* Sidebar */
+.ad-box-small {
+    width: 300px;
+    height: 250px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    line-height: 250px;
+    color: #999;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.info-card {
+    border: 1px solid var(--skl-border-blue);
+    text-align: left;
+}
+
+.info-card-header {
+    background-color: var(--skl-header-light);
+    padding: 8px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.info-links {
+    list-style: none;
+    padding: 15px;
+    margin: 0;
+}
+
+.info-links li {
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.info-links a {
+    text-decoration: none;
+    color: var(--skl-nav-blue);
+    font-weight: bold;
+}
+
+/* Footer */
+.footer-main {
+    margin-top: 50px;
+}
+
+.footer-top {
+    text-align: right;
+    padding: 0 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.footer-bottom {
+    background-color: var(--skl-dark-gray);
+    color: #dedede;
+    text-align: center;
+    padding: 20px;
+    font-size: 11px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .content-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .ad-placeholder, .header-content {
+        width: 100%;
+    }
+    .login-box-container {
+        width: 100%;
+    }
+}
